@@ -24,7 +24,7 @@ public class BlinkingCircles: GeometricLoader,CAAnimationDelegate {
         loaderView.center = CGPoint(x: frame.width/2, y: frame.height/2)
         
         calculateFirstCirclePosition()
-        
+        circles.removeAll()
         for _ in 0..<totalCircles {
             circles.append(setupCircle())
         }
